@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
-int length(float,float,float,float);
-int side(float,float,float);
+float length(float,float,float,float);
+float side(float,float,float);
 int main()
 {
     float ax,bx,cx,ay,by,cy,lab,lbc,lca,s,area;
@@ -20,7 +20,7 @@ int main()
     printf("area of triangle = %f",area);
     return 0;
 }
-int length(float p,float q,float r,float s)
+float length(float p,float q,float r,float s)
 {
     float u,v,length;
     u = r-p;
@@ -28,7 +28,7 @@ int length(float p,float q,float r,float s)
     length = sqrt((u*u)+ (v*v));
     return (length);
 }
-int side(float lab,float lbc,float lca)
+float side(float lab,float lbc,float lca)
 {
     float su;
     su = (lab+lbc+lca)/2;
